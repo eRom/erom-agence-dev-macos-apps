@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "erom-dev-macos-apps",
+  "description": "Concevoir, construire et livrer des apps macOS natives en SwiftUI.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Romain Ecarnot",
+    "url": "https://github.com/eRom"
+  },
+  "repository": "https://github.com/eRom/erom-agence-dev-macos-apps",
+  "license": "MIT",
+  "keywords": ["macos", "swiftui", "swift", "native", "desktop", "pwa"],
+  "skills": "./skills/"
+}
