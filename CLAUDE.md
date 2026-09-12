@@ -37,6 +37,23 @@ directement dans `plugin/`.
 5. **Le manifeste ne déclare pas ses agents.** La clé `agents` absente vaut
    découverte automatique de `plugin/agents/`. Une liste explicite fige les
    chemins et fait mentir `claude plugin details`, qui affiche alors « Agents (0) ».
+6. **Pas de dossier `commands/`.** Il est déprécié dans les plugins Claude Code
+   (https://code.claude.com/docs/en/plugins.md, vérifié le 2026-09-12). Une
+   commande est une skill avec `disable-model-invocation: true` et
+   `argument-hint`, invoquée `/erom-dev-macos-apps:<nom>`.
+7. **Jargon technique en anglais.** La prose est en français, mais les termes
+   Apple et Swift (scene, toolbar, entitlements, notarization, Liquid Glass...)
+   restent tels quels : c'est ce que l'utilisateur tape et ce que la doc Apple
+   emploie.
+
+## Origine
+
+Les skills sont portées depuis le plugin `build-macos-apps` d'OpenAI
+([github.com/openai/plugins](https://github.com/openai/plugins), licence MIT),
+traduites en français et adaptées à Claude Code. Copie de travail de la source :
+`~/dev/tmp-plugin/build-macos-apps/`. Le dépôt amont n'a pas de fichier LICENSE,
+le MIT n'y est déclaré que dans `.codex-plugin/plugin.json` : la mention est
+reprise en pied de `plugin/LICENSE`.
 
 ## Vérifier
 
@@ -68,14 +85,21 @@ le moment de les préparer, pas avant.
 
 ## État actuel - 2026-09-12
 
-Dépôt scaffoldé, aucune skill écrite.
+14 skills portées depuis OpenAI : 11 déclenchées par le modèle, 3 lancées au slash
+(ex-commands). Aucune n'a encore tourné sur un projet eRom.
 
 Œuvre servie : passer la PWA `erom-agence-control-plane` en app macOS native.
 Chaque skill de ce plugin doit se justifier par ce chantier tant qu'aucun autre
 projet réel ne l'a rejoint.
 
+**Écart à l'invariant 4.** Le contenu porté vient de l'expérience d'OpenAI, pas
+d'une sortie observée ici. Il fait foi jusqu'à ce que le control-plane le
+contredise : toute consigne qui casse sur ce chantier se corrige avec l'incident
+daté à l'appui.
+
 | Élément | État |
 |---|---|
 | Première cible | `erom-agence-control-plane` (PWA) vers app macOS native |
-| `plugin/skills/` | vide |
+| `plugin/skills/` | 14 skills, portées, jamais éprouvées |
+| Image du README | `assets/erom-dev-macos-apps.png`, livrée le 2026-09-12 |
 | Publication marketplace | non faite |

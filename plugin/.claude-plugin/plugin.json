@@ -9,6 +9,6 @@
   },
   "repository": "https://github.com/eRom/erom-agence-dev-macos-apps",
   "license": "MIT",
-  "keywords": ["macos", "swiftui", "swift", "native", "desktop", "pwa"],
+  "keywords": ["macos", "swiftui", "swift", "native", "desktop"],
   "skills": "./skills/"
 }
