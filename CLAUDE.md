@@ -67,7 +67,7 @@ C'est la seule preuve que le manifeste charge ce qu'on croit : un dossier
 
 ## Publication
 
-Non publié à ce jour. La publication ne se fait pas à la main : la skill `release`
+Publié dans `erom-marketplace` en 0.1.0 le 2026-09-12. La publication ne se fait pas à la main : la skill `release`
 du plugin `erom-dev-plugin` la porte de bout en bout, depuis ce dépôt.
 
 ```
@@ -102,4 +102,4 @@ daté à l'appui.
 | Première cible | `erom-agence-control-plane` (PWA) vers app macOS native |
 | `plugin/skills/` | 14 skills, portées, jamais éprouvées |
 | Image du README | `assets/erom-dev-macos-apps.png`, livrée le 2026-09-12 |
-| Publication marketplace | non faite |
+| Publication marketplace | 0.1.0, première publication le 2026-09-12 |
